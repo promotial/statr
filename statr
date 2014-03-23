@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if curl --silent --head http://www.google.com/  |egrep "20[0-9] Found|30[0-9] Found" >/dev/null; then
+    online=1
+fi
+
+if [ "$1" = "first" ]; then
+    if [ "$online" ]; then
+        npm install;
+        ./node_modules/david/bin/david.js;
+        ./node_modules/grunt-cli/bin/grunt;
+    else
+        echo Error: No Internet Connection
+    fi
+elif [ "$1" = "start" ]; then
+    npm --silent install;
+    if [ "$online" ]; then
+        ./node_modules/david/bin/david.js;
+    fi
+    ./node_modules/grunt-cli/bin/grunt;
+elif [ "$1" = "once" ]; then
+    npm --silent install;
+    if [ "$online" ]; then
+        ./node_modules/david/bin/david.js;
+    fi
+    ./node_modules/grunt-cli/bin/grunt runOnce;
+fi
