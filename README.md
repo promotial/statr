@@ -27,8 +27,8 @@ Or, to run once on a server run:
   ./statr once
 ```
 
-Keep in mind that we currently do not provide any means of customizing your karma.conf.js or Gruntfile.js so you will need to fork this repo to use a different a tool stack.
-
 The test runner is currently configured to use: Jasmine (unit tests), Yadda & Webdriver (end to end tests), JSLint (code quality), Connect (web server)
 
-For an example of how to test a sencha touch application with STATR see this example - https://github.com/promotial/statr-example
+Keep in mind that we currently do not provide a means of customizing your karma.conf.js or Gruntfile.js so you will need to fork the repo to use a different a tool stack.
+
+For an example of how to test a sencha touch application with STATR see the [statr-example](https://github.com/promotial/statr-example) repo.
