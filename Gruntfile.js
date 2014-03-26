@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                     failOnError: true,
                     //run in current directory
                     execOptions: {
-                        cwd: "test/runner"
+                        cwd: "test/statr"
                     }
                 },
                 command: "./node_modules/mocha/bin/mocha --timeout 50000 --reporter spec run.js"
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
         karma: {
             //run karma unit tests
             options: {
-                configFile: 'test/runner/karma.conf.js',
+                configFile: 'test/statr/karma.conf.js',
                 //run & then exit browsers
                 singleRun: true /* less errors */
             },
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
             //lint app & test code
             client: {
                 src: [
-                    'app/**/*.js', 'test/**/*.js', '!**/node_modules/**', '!test/runner/lib/**'
+                    'app/**/*.js', 'test/**/*.js', '!**/node_modules/**', '!test/statr/lib/**'
                 ],
                 directives: {
                     //predefine globals

@@ -18,8 +18,8 @@ module.exports = function (config) {
             "touch/sencha-touch-all-debug.js",
 
             //load tests
-            "test/runner/SpecHelper.js",
-            "test/runner/app.js",
+            "test/statr/SpecHelper.js",
+            "test/statr/app.js",
             "test/unit/**/*.js",
 
             //load source files
@@ -41,8 +41,8 @@ module.exports = function (config) {
         port: 9876,
 
 
-        //cli runner port
-        runnerPort: 9100,
+        //cli statr port
+        statrPort: 9100,
 
 
         //enable / disable colors in the output (reporters and logs)
