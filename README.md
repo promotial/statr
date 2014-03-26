@@ -10,7 +10,7 @@ Ensure you have [node](http://nodejs.org/download/) and [Sencha Touch](http://me
 
 To install the test runner run the following commands:
 ```bash
-  mkdir ./test/features; mkdir ./test/unit;
+  mkdir test; mkdir test/features; mkdir test/unit;
   git submodule add git@github.com:promotial/statr.git ./test/statr; cd test/statr;
   ./statr first;
 ```
