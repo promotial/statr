@@ -8,10 +8,11 @@ How to use it?
 ------------
 Ensure you have [node](http://nodejs.org/download/) and [Sencha Touch](http://meteor.com).
 
-To install the test runner run the following commands:
+To install, run these commands in your project's base directory:
 ```bash
   mkdir test; mkdir test/features; mkdir test/unit;
   git submodule add git@github.com:promotial/statr.git ./test/statr; cd test/statr;
+  ./generate/app-stub YourAppNameHere > app.js;
   ./statr first;
 ```
 
