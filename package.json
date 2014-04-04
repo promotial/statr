@@ -10,7 +10,7 @@
     "grunt-jslint": "~1.1.6",
     "david": "~3.1.0",
     "load-grunt-tasks": "~0.4.0",
-    "selenium-webdriver": "~2.40.0",
+    "selenium-webdriver": "~2.41.0",
     "glob": "~3.2.9",
     "mocha": "~1.18.0",
     "yadda": "~0.10.1",
